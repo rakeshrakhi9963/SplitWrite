@@ -1,0 +1,14 @@
+[package]
+name = "splitwrite"
+version = "0.1.0"
+authors = ["Rakesh Rakhi <youremail@example.com>"]
+edition = "2021"
+
+description = "A Rust concurrency primitive for scalable read performance using a mirrored data structure."
+# repository = "https://github.com/rakeshrakhi9963/SplitWrite"
+
+[dependencies]
+slab = "0.4.1"
+
+[target.'cfg(loom)'.dependencies]
+loom = "0.5.6"
